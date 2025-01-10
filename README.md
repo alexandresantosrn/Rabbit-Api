@@ -5,6 +5,8 @@ Projeto baseado na seguinte playlist: https://www.youtube.com/watch?v=BwQMTRh1hC
 ## Instalação do RabbitMQ via Docker
 
 - Acessar o diretório: Rabbit-Docker.
-- Para iniciar o container: ```docker compose up -d```. 
+- Para iniciar a execução do container: ```docker compose up -d```. 
 - Para parar a execução do container: ```docker compose down```.
- 
+
+### Acesso ao painel do RabbitMQ
+- Após subir aplicação, acessar: ```http://localhost:15672```. 
