@@ -1,4 +1,4 @@
-package com.microservico.estoquepreco.dto;
+package com.microservico.estoquepreco.dtos;
 
 import java.io.Serializable;
 

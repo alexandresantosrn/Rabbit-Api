@@ -14,7 +14,7 @@ public class RabbitMQConnection {
     /* Nome da Exchange da listagem de exchanges do RabbitMQ. */
     private static final String NAME_EXCHANGE = "amq.direct";
 
-    private AmqpAdmin amqpAdmin;
+    private final AmqpAdmin amqpAdmin;
 
     public RabbitMQConnection(AmqpAdmin amqpAdmin) {
         this.amqpAdmin = amqpAdmin;
@@ -46,7 +46,7 @@ public class RabbitMQConnection {
         this.amqpAdmin.declareQueue(filaEstoque);
         this.amqpAdmin.declareQueue(filaPreco);
 
-        /* Criando as exchange. */
+        /* Criando as exchanges. */
         this.amqpAdmin.declareExchange(change);
 
         /* Criando os bindings. */
